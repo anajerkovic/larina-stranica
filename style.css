@@ -1,0 +1,134 @@
+
+.background {
+    background: radial-gradient(#faa909, #ff8f34, #da5376,
+     #0f47e0, #3135d5);
+    background-size: 180% 180%;
+    animation: gradient-animation 30s ease infinite;
+
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .card{
+    background-color: red;
+    height: max-content;
+  }
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+  .title{
+    font-weight: bolder;
+    font-size: 7rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: #313d5d;
+  }
+
+  .desc{
+    text-align: right;
+    font-size: large;
+    margin-top: 10rem;
+    padding: 3rem;
+  }
+
+  .card-text{
+    text-align: left;
+  }
+  
+  .pink{
+    background-color: #da5376;
+  }
+
+  .light-pink{
+    background-color: #eb7594;
+  }
+
+  .blue{
+    background-color: #313d5d;
+  }
+
+  .orange{
+    background-color: #ff8f34;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    background-color: #ffded1;
+    height: 100vh;
+    padding: 3rem;
+  }
+  
+    .grid-item{
+        border-radius: 2%;
+        height: max-content;
+        padding: 2rem;
+        text-align: center;
+
+    }
+
+    .news{
+        grid-row: span 2;
+        background-color: #fff7f7;
+        text-align: left;
+    }
+
+    .news-text{
+        font-size: 1.25rem;
+    }
+
+    .pics{
+        grid-column: span 3;
+    }
+
+    .special{
+          font-size: 2rem;
+          font-weight: bolder;
+          font-style: italic;
+        }
+
+    .era{
+          height: 15rem;
+        }
+
+    .cover{
+      border-radius: 3%;
+      height: 300px;
+    }
+    @media (max-width:800px) {
+
+        .grid-container{
+            grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/1fr;
+        }
+
+        .news{
+            grid-row: span 2;
+        }
+
+        .pics{
+            grid-column: span 1;
+            grid-row: span 2;  
+        }
+    }
+
+
+
+    
+
